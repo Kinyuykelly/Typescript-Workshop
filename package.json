@@ -1,0 +1,24 @@
+{
+  "name": "typescript-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Kinyuykelly/Typescript-Workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kinyuykelly/Typescript-Workshop/issues"
+  },
+  "homepage": "https://github.com/Kinyuykelly/Typescript-Workshop#readme",
+  "dependencies": {
+    "@types/lodash": "^4.14.197",
+    "lodash": "^4.17.21"
+  }
+}
