@@ -13,37 +13,41 @@ var __assign = (this && this.__assign) || function () {
 var PI = 3.14;
 var getArea = function (shape) {
     switch (shape.type) {
-        case 'circle':
-            return getCircleArea(shape);
-        case 'rectangle':
-            return getRectangleArea(shape);
-        case 'rightTriangle':
-            return getRightTriangleArea(shape);
-        case 'square':
-            return getSquareArea(shape);
+        case "circle":
+            return getCircleArea1(shape);
+        case "rectangle":
+            return getRectangleArea1(shape);
+        case "rightTriangle":
+            return getRightTriangleArea1(shape);
+        case "square":
+            return getSquareArea1(shape);
     }
 };
-var getCircleArea = function (circle) {
+var getCircleArea1 = function (circle) {
     var radius = circle.radius;
     return radius * radius * PI;
 };
-var getRectangleArea = function (rectangle) {
+var getRectangleArea1 = function (rectangle) {
     var length = rectangle.length, width = rectangle.width;
     return length * width;
 };
-var getRightTriangleArea = function (rightTriangle) {
+var getRightTriangleArea1 = function (rightTriangle) {
     var height = rightTriangle.height, base = rightTriangle.base;
     return (base * height) / 2;
 };
-var getSquareArea = function (square) {
+var getSquareArea1 = function (square) {
     var width = square.width;
-    return getRectangleArea({ length: width, type: 'rectangle', width: width });
+    return getRectangleArea1({ length: width, type: "rectangle", width: width });
 };
-var circle = { radius: 4, type: 'circle' };
-console.log(__assign(__assign({}, circle), { area: getCircleArea(circle) }));
-var rectangle = { length: 7, width: 4, type: 'rectangle' };
-console.log(__assign(__assign({}, rectangle), { area: getRectangleArea(rectangle) }));
-var rightTriangle = { base: 9, height: 4, type: 'rightTriangle' };
-console.log(__assign(__assign({}, rightTriangle), { area: getRightTriangleArea(rightTriangle) }));
-var square = { width: 5, type: 'square' };
-console.log(__assign(__assign({}, square), { area: getSquareArea(square) }));
+var circle = { radius: 4, type: "circle" };
+console.log(__assign(__assign({}, circle), { area: getCircleArea1(circle) }));
+var rectangle = { length: 7, width: 4, type: "rectangle" };
+console.log(__assign(__assign({}, rectangle), { area: getRectangleArea1(rectangle) }));
+var rightTriangle = {
+    base: 9,
+    height: 4,
+    type: "rightTriangle",
+};
+console.log(__assign(__assign({}, rightTriangle), { area: getRightTriangleArea1(rightTriangle) }));
+var square = { width: 5, type: "square" };
+console.log(__assign(__assign({}, square), { area: getSquareArea1(square) }));
