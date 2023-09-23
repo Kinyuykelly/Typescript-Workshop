@@ -1,13 +1,6 @@
 import { words } from "lodash";
 
-export const sentence = (
-    subject: string,
-    verb: string,
-    ...objects: string[]
-    ): string => {
-        return `${subject}  ${verb}  ${arrayToObjectSegment(objects)}.`;
-    };
-export const arrayToObjectSegment = (words: string[]): string => {
+export const arrayToAnd= (words: string[]): string => {
      if(words.length < 1){
         return "";
      }
@@ -30,6 +23,15 @@ export const capitalize = (sentence: string): string => {
         .slice(1)
         .toLowerCase()}`;
 };
-console.log(sentence("the cat", "ate", "apples", "cheese", "pancakes"));
-console.log(sentence("the cat", "slept", "all day"));
-console.log(sentence("the cat", "sneezed"));
+
+export const sentence = (
+    subject: string,
+    verb: string,
+    ...objects: string[]
+    ): string => {
+        return `${subject}  ${verb}  ${arrayToAnd(objects)}.`;
+    };
+
+// console.log(sentence("the cat", "ate", "apples", "cheese", "pancakes"));
+// console.log(sentence("the cat", "slept", "all day"));
+// console.log(sentence("the cat", "sneezed"));
