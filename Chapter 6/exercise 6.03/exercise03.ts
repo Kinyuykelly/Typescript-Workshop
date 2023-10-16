@@ -1,6 +1,4 @@
-import { type } from "os";
-
-/// create user object type
+// create user object type
 type BasicUser = {
     _id: number;
     email: string;
