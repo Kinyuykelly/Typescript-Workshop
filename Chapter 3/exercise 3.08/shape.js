@@ -13,14 +13,14 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var shape_lib_1 = require("./shape-lib");
 var circle = { radius: 4, type: 'circle' };
-console.log(__assign(__assign({}, circle), { area: (0, shape_lib_1.getArea)(circle) }));
+console.log(__assign(__assign({}, circle), { area: shape_lib_1.getArea(circle) }));
 var rectangle = { type: 'rectangle', length: 7, width: 4 };
-console.log(__assign(__assign({}, rectangle), { area: (0, shape_lib_1.getArea)(rectangle) }));
+console.log(__assign(__assign({}, rectangle), { area: shape_lib_1.getArea(rectangle) }));
 var square = { type: 'square', width: 5 };
-console.log(__assign(__assign({}, square), { area: (0, shape_lib_1.getArea)(square) }));
+console.log(__assign(__assign({}, square), { area: shape_lib_1.getArea(square) }));
 var rightTriangle = {
     type: 'rightTriangle',
     base: 9,
     height: 4,
 };
-console.log(__assign(__assign({}, rightTriangle), { area: (0, shape_lib_1.getArea)(rightTriangle) }));
+console.log(__assign(__assign({}, rightTriangle), { area: shape_lib_1.getArea(rightTriangle) }));

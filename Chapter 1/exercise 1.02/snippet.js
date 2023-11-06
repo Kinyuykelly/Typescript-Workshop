@@ -6,7 +6,7 @@ function snippet(text, length) {
     var ellipsis = "...";
     var result = text.slice(0, length - ellipsis.length);
     var lastSpace = result.lastIndexOf("");
-    result = "".concat(result.slice(0, lastSpace)).concat(ellipsis);
+    result = "" + result.slice(0, lastSpace) + ellipsis;
     return result;
 }
 // correct call and usage

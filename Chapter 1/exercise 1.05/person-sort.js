@@ -2,7 +2,7 @@
 var count = 0;
 function getFullName(person) {
     count += 1;
-    return "".concat(person.firstName, " ").concat(person.lastName);
+    return person.firstName + " " + person.lastName;
 }
 var programmers = [
     { firstName: 'kim', lastName: 'Babara' },
@@ -28,8 +28,8 @@ function schwartzSortPersons(persons) {
 count = 0;
 var sortedNaive = naiveSortPersons(programmers);
 console.log(sortedNaive);
-console.log("When using the naive approach, the function calles ".concat(count, " times"));
+console.log("When using the naive approach, the function calles " + count + " times");
 count = 0;
 var sortedSchwartz = schwartzSortPersons(programmers);
 console.log(sortedSchwartz);
-console.log("When using the naive approach, the function calles ".concat(count, " times"));
+console.log("When using the naive approach, the function calles " + count + " times");

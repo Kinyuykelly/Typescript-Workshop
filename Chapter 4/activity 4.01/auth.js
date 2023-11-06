@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Auth = exports.Login = void 0;
 var Login = /** @class */ (function () {
     function Login(args) {
         this.email = args.email;

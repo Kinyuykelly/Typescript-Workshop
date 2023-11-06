@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getArea = void 0;
 var PI = 3.14;
 var getCircleArea = function (circle) {
     var radius = circle.radius;
@@ -18,7 +17,7 @@ var getRightTriangleArea = function (rightTriangle) {
     var base = rightTriangle.base, height = rightTriangle.height;
     return (base * height) / 2;
 };
-var getArea = function (shape) {
+exports.getArea = function (shape) {
     switch (shape.type) {
         case 'circle':
             return getCircleArea(shape);
@@ -30,4 +29,3 @@ var getArea = function (shape) {
             return getSquareArea(shape);
     }
 };
-exports.getArea = getArea;

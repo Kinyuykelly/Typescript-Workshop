@@ -8,7 +8,7 @@ function makeProduct(p) {
 // use a for loop to create 5 products
 for (var index = 0; index < 5; index++) {
     var p = {
-        name: "Product" + "_" + "".concat(index),
+        name: "Product" + "_" + ("" + index),
         count: index,
         price: 100,
         amount: 15
@@ -16,4 +16,4 @@ for (var index = 0; index < 5; index++) {
     makeProduct(p);
 }
 console.log(products_list);
-
+console.log(2 + 3);
