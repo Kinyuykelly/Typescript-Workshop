@@ -5,7 +5,7 @@ var TeamD = /** @class */ (function () {
     }
     TeamD.prototype.generateLineup = function () {
         var playersWithOrderNumber = this.players.map(function (player, idx) {
-            return "<div>".concat(idx + 1, " - ").concat(player, "<div>");
+            return "<div>" + (idx + 1) + " - " + player + "<div>";
         });
         return playersWithOrderNumber.join("");
     };

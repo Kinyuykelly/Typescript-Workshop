@@ -6,7 +6,7 @@ var Scoreboard = /** @class */ (function () {
         this.date = args.date;
     }
     Scoreboard.prototype.scoreboardHtml = function () {
-        return "\n            <h1>".concat(this.date, "<h1>\n            <h2>").concat(this.homeTeam.name, "<h2>\n            <h2>").concat(this.homeTeam.generateLineup(), "<h2>\n            <h2>").concat(this.awayTeam.name, "<h2>\n            <h2>").concat(this.homeTeam.generateLineup(), "<h2>");
+        return "\n            <h1>" + this.date + "<h1>\n            <h2>" + this.homeTeam.name + "<h2>\n            <h2>" + this.homeTeam.generateLineup() + "<h2>\n            <h2>" + this.awayTeam.name + "<h2>\n            <h2>" + this.homeTeam.generateLineup() + "<h2>";
     };
     return Scoreboard;
 }());
@@ -17,7 +17,7 @@ var TeamE = /** @class */ (function () {
     }
     TeamE.prototype.generateLineup = function () {
         var playersWithOrderNumber = this.players.map(function (player, idx) {
-            return "<div>".concat(idx + 1, " - ").concat(player, "</div>");
+            return "<div>" + (idx + 1) + " - " + player + "</div>";
         });
         return playersWithOrderNumber.join("");
     };

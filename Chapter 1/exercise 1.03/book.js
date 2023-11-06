@@ -1,8 +1,8 @@
 "use strict";
 function showBook(book) {
-    console.log("".concat(book.author, " wrote ").concat(book.title));
+    console.log(book.author + " wrote " + book.title);
     if (book.isRead !== undefined) {
-        console.log(" i have ".concat(book.isRead ? "read" : "not read", " this book"));
+        console.log(" i have " + (book.isRead ? "read" : "not read") + " this book");
     }
 }
 function setPages(book, pages) {

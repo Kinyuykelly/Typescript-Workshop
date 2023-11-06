@@ -4,6 +4,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var arrow_cat_1 = require("../exercise 3.03/arrow-cat");
 describe("should capitalize the string", function () {
     test("capitalize", function () {
-        expect((0, arrow_cat_1.capitalize)("HELLO")).toBe("Hello");
+        expect(arrow_cat_1.capitalize("HELLO")).toBe("Hello");
     });
 });

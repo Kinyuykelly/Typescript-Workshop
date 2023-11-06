@@ -15,6 +15,6 @@ function arrayCompare(a1, a2) {
     }
     return true;
 }
-console.log("Are ".concat(arrayone, " and ").concat(arraytwo, " equal?"), arrayCompare(arrayone, arraytwo));
-console.log("Are ".concat(arrayone, " and ").concat(arraythree, " equal?"), arrayCompare(arrayone, arraythree));
-console.log("Are ".concat(arraytwo, " and ").concat(arraythree, " equal?"), arrayCompare(arraytwo, arraythree));
+console.log("Are " + arrayone + " and " + arraytwo + " equal?", arrayCompare(arrayone, arraytwo));
+console.log("Are " + arrayone + " and " + arraythree + " equal?", arrayCompare(arrayone, arraythree));
+console.log("Are " + arraytwo + " and " + arraythree + " equal?", arrayCompare(arraytwo, arraythree));

@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var superUser = {
     _id: 1,
     email: 'rayon.hunte@gmail.com',

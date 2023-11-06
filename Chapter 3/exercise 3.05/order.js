@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.orderFactory = void 0;
-var orderFactory = function () {
+exports.orderFactory = function () {
     var id = 0;
     return function (color, size, qty) {
         var orders = [];
@@ -11,8 +10,7 @@ var orderFactory = function () {
         return orders;
     };
 };
-exports.orderFactory = orderFactory;
-var createOrder = (0, exports.orderFactory)();
+var createOrder = exports.orderFactory();
 var orderOne = createOrder('red', 'M', 4);
 console.log(orderOne);
 var orderTwo = createOrder('blue', 's', 7);

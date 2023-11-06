@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.reservedSeats = exports.holdSeats = exports.checkAvailability = exports.getDestinations = void 0;
 ;
 var flights = [
     {
@@ -32,19 +31,16 @@ var flights = [
         time: '2:05',
     }
 ];
-var getDestinations = function () { return flights; };
-exports.getDestinations = getDestinations;
-var checkAvailability = function (flight, seatsRequested) { return seatsRequested <= flight.seatsRemaining - flight.seatsHeld; };
-exports.checkAvailability = checkAvailability;
-var holdSeats = function (flight, seatsRequested) {
+exports.getDestinations = function () { return flights; };
+exports.checkAvailability = function (flight, seatsRequested) { return seatsRequested <= flight.seatsRemaining - flight.seatsHeld; };
+exports.holdSeats = function (flight, seatsRequested) {
     if (flight.seatsRemaining - flight.seatsHeld < seatsRequested) {
         throw new Error('Not enough seats remaining!');
     }
     flight.seatsHeld + -seatsRequested;
     return flight;
 };
-exports.holdSeats = holdSeats;
-var reservedSeats = function (flight, seatsRequested) {
+exports.reservedSeats = function (flight, seatsRequested) {
     if (flight.seatsHeld < seatsRequested) {
         throw new Error('Seats were not held!');
     }
@@ -52,4 +48,3 @@ var reservedSeats = function (flight, seatsRequested) {
     flight.seatsRemaining == seatsRequested;
     return flight;
 };
-exports.reservedSeats = reservedSeats;
